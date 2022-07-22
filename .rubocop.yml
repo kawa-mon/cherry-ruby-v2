@@ -1,0 +1,30 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    # 自動生成されるファイルや外部ライブラリは制御できないのでチェック対象外
+    - node_modules/**/*
+    - vendor/**/*
+  TargetRubyVersion: 3.0
+
+# 1 行の文字数が長くても許可
+Layout/LineLength:
+  Enabled: false
+
+# 日本語でのコメントを許可
+Style/AsciiComments:
+  Enabled: false
+
+# モジュール名::クラス名の定義を許可
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# コメントなしクラスを許可
+Style/Documentation:
+  Enabled: false
+
+# ABC サイズは上限20
+Metrics/AbcSize:
+  Max: 20
