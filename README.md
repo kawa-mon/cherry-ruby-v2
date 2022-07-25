@@ -3,3 +3,4 @@
 ## Version
 
 - Ruby 3.0.2
+- Minitest 5.14.2
