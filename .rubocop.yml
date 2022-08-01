@@ -28,3 +28,6 @@ Style/Documentation:
 # ABC サイズは上限20
 Metrics/AbcSize:
   Max: 20
+
+Metrics/MethodLength:
+  Max: 15
